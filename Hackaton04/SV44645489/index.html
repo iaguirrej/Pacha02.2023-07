@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>HACKATON 04 - Imer Aguirre</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>      
+    <script src="./hackaton04.js"></script>
+  </head>
+  <body>
+    <div style="width: 100%; text-align: center;">
+        <h1>HACKATON 04</h1>
+        <h4>IMER AGUIRRE</h4>
+    </div>
+    <div style="display: flex; align-items: start; justify-content: center;">
+        <div style="width: 50%; text-align: center;">
+            <h4>RETO 1</h4>
+            <div class="card-group">            
+                <div class="card-group_item">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 1</span></div>
+                    <button type="button" class="btn" onclick="r1_exercise1()">Realizar</button>
+                </div>
+        
+                <div class="card-group_item">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 2</span></div>
+                    <button type="button" class="btn" onclick="r1_exercise2()">Realizar</button>
+                </div>
+        
+                <div class="card-group_item">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 3</span></div>
+                    <button type="button" class="btn" onclick="r1_exercise3()">Realizar</button>
+                </div>
+        
+                <div class="card-group_item">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 4</span></div>
+                    <button type="button" class="btn" onclick="r1_exercise4()">Realizar</button>
+                </div>
+        
+                <div class="card-group_item">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 5</span></div>
+                    <button type="button" class="btn" onclick="r1_exercise5()">Realizar</button>
+                </div>
+            </div>
+        </div>
+        <div style="width: 50%; text-align: center;">
+            <h4>RETO 2</h4>
+            <div class="card-group">            
+                <div class="card-group_item2">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 1</span></div>
+                    <div style="padding-bottom: 1rem; text-align: left;">
+                        <span><b>PARÁMETROS</b></span><br/>
+                        <span>Nombre: Imer</span><br/>
+                        <span>Nombre: Aguirre</span><br/>
+                        <span>Edad: 36</span><br/>
+                    </div>
+                    <button type="button" class="btn" onclick="r2_exercise1('Imer','Aguirre',36)">Realizar</button>
+                </div>
+        
+                <div class="card-group_item2">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 2</span></div>
+                    <div style="padding-bottom: 1rem; text-align: left;">
+                        <span><b>PARÁMETROS</b></span><br/>
+                        <span>Número 1: 2</span><br/>
+                        <span>Número 2: 4</span><br/>
+                        <span>Número 3: 6</span><br/>
+                    </div>
+                    <button type="button" class="btn" onclick="r2_exercise2(2,4,6)">Realizar</button>
+                </div>
+        
+                <div class="card-group_item2">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 3</span></div>
+                    <div style="padding-bottom: 1rem; text-align: left;">
+                        <span><b>PARÁMETROS</b></span><br/>
+                        <span>Valor: 'Hola'</span><br/>                       
+                    </div>
+                    <button type="button" class="btn" onclick="r2_exercise3('Hola')">Realizar</button>
+                </div>
+        
+                <div class="card-group_item2">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 4</span></div>
+                    <div style="padding-bottom: 1rem; text-align: left;">
+                        <span><b>PARÁMETROS</b></span><br/>
+                        <span>Número 1: 2</span><br/>
+                        <span>Número 2: 4</span><br/>
+                        <span>Número 3: 6</span><br/>
+                    </div>
+                    <button type="button" class="btn" onclick="r2_exercise4(2,4,6)">Realizar</button>
+                </div>
+        
+                <div class="card-group_item2">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 5</span></div>
+                    <div style="padding-bottom: 1rem; text-align: left;">
+                        <span><b>PARÁMETROS</b></span><br/>
+                        <span>Valor: 1</span><br/>
+                        <span>Boolean: true</span><br/>
+                        <span>String: "Perú"</span><br/>
+                        <span>String: "Mundial"</span><br/>
+                    </div>
+                    <button type="button" class="btn" onclick="r2_exercise5([1,true,{},'Perú','Mundial'])">Realizar</button>
+                </div>
+
+                <div class="card-group_item2">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 6</span></div>
+                    <div style="padding-bottom: 1rem; text-align: left;">
+                        <span><b>PARÁMETROS</b></span><br/>
+                        <span>Array: [2,5,1,45,23,-7]</span><br/>                       
+                    </div>
+                    <button type="button" class="btn" onclick="r2_exercise6([2,5,1,45,23,-7])">Realizar</button>
+                </div>
+
+                <div class="card-group_item2">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 7</span></div>
+                    <div style="padding-bottom: 1rem; text-align: left;">
+                        <span><b>PARÁMETROS</b></span><br/>
+                        <span>Array: [0, 5, 1, 5, 4, 3, 7, 8, 9, 0]</span><br/>                       
+                    </div>
+                    <button type="button" class="btn" onclick="r2_exercise7([0, 5, 1, 5, 4, 3, 7, 8, 9, 0])">Realizar</button>
+                </div>
+
+                <div class="card-group_item2">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 8</span></div>
+                    <div style="padding-bottom: 1rem; text-align: left;">
+                        <span><b>PARÁMETROS</b></span><br/>
+                        <span>Array: [[5, 2, 4, 1], [21, 72, 20, 60], [1, 2, 0]]</span><br/>                       
+                    </div>
+                    <button type="button" class="btn" onclick="r2_exercise8([[5, 2, 4, 1], [21, 72, 20, 60], [1, 2, 0]])">Realizar</button>
+                </div>
+
+                <div class="card-group_item2">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 9</span></div>
+                    <div style="padding-bottom: 1rem; text-align: left;">
+                        <span><b>PARÁMETROS</b></span><br/>
+                        <span>Palabra: 'curriculum'</span><br/>                       
+                        <span>Letra: 'c'</span><br/>   
+                    </div>
+                    <button type="button" class="btn" onclick="r2_exercise9('curriculum','c')">Realizar</button>
+                </div>
+
+                <div class="card-group_item2">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 10</span></div>
+                    <div style="padding-bottom: 1rem; text-align: left;">
+                        <span><b>PARÁMETROS</b></span><br/>
+                        <span>Objeto: { a: 6, b: 1 }</span><br/>                      
+                      
+                    </div>
+                    <button type="button" class="btn" onclick="r2_exercise10({ a: 6, b: 1 })">Realizar</button>
+                </div>
+
+                <div class="card-group_item2">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 11</span></div>
+                    <div style="padding-bottom: 1rem; text-align: left;">
+                        <span><b>PARÁMETROS</b></span><br/>
+                        <span>Array: [
+                                { name: 'Imer', age: 36, budget: 27567 },
+                                { name: 'Hiovanna',  age: 31, budget: 39456 },
+                                { name: 'Nelson',  age: 36, budget: 1450 }
+                              ]</span><br/>                      
+                      
+                    </div>
+                    <button type="button" class="btn" onclick="r2_exercise11([
+                    { name: 'Imer', age: 36, budget: 27567 },
+                    { name: 'Hiovanna',  age: 31, budget: 39456 },
+                    { name: 'Nelson',  age: 36, budget: 1450 }
+                  ])">Realizar</button>
+                </div>
+
+                <div class="card-group_item2">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 12</span></div>
+                    <div style="padding-bottom: 1rem; text-align: left;">
+                        <span><b>PARÁMETROS</b></span><br/>
+                        <span>Array: [
+                               { name: 'Imer' },
+                               { name: 'Hiovanna' },
+                               { name: 'Nelson' }
+                             ]</span><br/>                      
+                      
+                    </div>
+                    <button type="button" class="btn" onclick="r2_exercise12([
+                    { name: 'Imer' },
+                    { name: 'Hiovanna' },
+                    { name: 'Nelson' }
+                  ])">Realizar</button>
+                </div>
+
+                <div class="card-group_item2">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 13</span></div>
+                    <div style="padding-bottom: 1rem; text-align: left;">
+                        <span><b>PARÁMETROS</b></span><br/>
+                        <span>Objeto: {
+                                likes: 2,
+                                dislikes: 3,
+                                followers: 10
+                              }</span><br/>                      
+                      
+                    </div>
+                    <button type="button" class="btn" onclick="r2_exercise13({
+                        likes: 2,
+                        dislikes: 3,
+                        followers: 10
+                      })">Realizar</button>
+                </div>
+
+                <div class="card-group_item2">
+                    <div style="padding-bottom: 1rem;"><span style="font-size: 14px; font-weight: bold;">Ejercicio 14</span></div>
+                    <div style="padding-bottom: 1rem; text-align: left;">
+                        <span><b>PARÁMETROS</b></span><br/>
+                        <span>Número: 3</span><br/>                      
+                      
+                    </div>
+                    <button type="button" class="btn" onclick="r2_exercise14(3)">Realizar</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div> 
+        
+  </body>
+</html>

@@ -1,0 +1,43 @@
+.card-group {
+    width: 100%;    
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.card-group_item {
+    width: 200px;
+    height: 100px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.card-group_item2 {
+    width: 200px;
+    height: 100%;
+    background-color: lightgreen;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
+.btn{
+    width: 60%;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border-color: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
