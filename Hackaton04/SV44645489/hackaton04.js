@@ -189,3 +189,78 @@ const r2_exercise14 = (n) =>
     }
     alert(`La suma de cuadrados de los ${n} primeros números es ${sum}.`)
 }
+
+//15. Cree una función para multiplicar todos los valores en una matriz por la cantidad de valores en la matriz dada
+const r2_exercise15 = (array) =>
+{
+    const multiplicator = array.length
+    let result = array.map(value => value * multiplicator)
+    alert(result)
+}
+
+//16. Cree una función que tome un número como argumento y devuelva una matriz de números contando desde este número a cero.
+const r2_exercise16 = (n) =>
+{
+    const array = [];
+    for(i=n;i>=0;i--){
+        array.push(i);
+    }
+    alert(array)
+}
+
+//17. Cree una función que tome una matriz y devuelva la diferencia entre los números más grandes y más pequeños.
+const r2_exercise17 = (array) =>
+{
+    const min = Math.min(...array)
+    const max = Math.max(...array)
+    const difference = max - min
+    alert(`El menor número es ${min}, el mayor número es ${max}. La diferencia del número mayor y el número menor es ${difference}`)
+}
+
+//18. Cree una función que filtre las cadenas de una matriz y devuelva una nueva matriz que solo contenga enteros.
+const r2_exercise18 = (array) =>
+{
+    let result = array.filter((value) => typeof value == 'number');
+    alert(`Los elementos que son tipo numérico son: ${result}.`)
+}
+
+//19. Cree una función que tome dos argumentos (elemento, tiempos). El primer argumento (elemento) es el elemento que necesita repetirse, mientras que el segundo argumento (veces) es la cantidad de veces que se debe repetir el elemento. Devuelve el resultado en una matriz.
+const r2_exercise19 = (element, time) =>
+{    
+    let result = Array.from({ length: time }, () => element);
+    alert(result);
+}
+
+//20. Escriba una función, .vreplace () que extienda el prototipo de cadena reemplazando todas las vocales en una cadena con una vocal especificada.
+const r2_exercise20 = (word, newVowel) =>
+{
+    let result = word.replace(/[aeiouAEIOU]/g, newVowel);     
+    alert(result);
+};
+
+//21. Te dan una cadena de palabras. Debe encontrar la palabra "father" y devolver una cadena como esta: 
+const r2_exercise21 = (sentence) =>
+{
+    const words = sentence.split(" ")
+    const position = words.findIndex(word => word == 'father')
+
+    if(position != -1){
+        const orderWord = position + 1
+        alert( `La palabra father se encuentra en el orden ${orderWord}!`)
+    }else {
+        alert("No se pudo encontrar la palabra father!")
+    }
+}
+
+//22. Cree una función que capitalice la última letra de cada palabra.
+const r2_exercise22 = (sentence) =>
+{
+    const words = sentence.split(" ");
+    const wordsCapitalized = words.map(word => {
+        const lastLetter = word.slice(-1).toUpperCase();
+        const firtsLetter = word.slice(0,-1);
+        return firtsLetter + lastLetter;
+    })
+    let result = wordsCapitalized.join(" ")
+    alert(result)
+}
