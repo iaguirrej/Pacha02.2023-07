@@ -1,0 +1,11 @@
+body {
+  height: 100vh;
+  background: beige;
+}
+
+
+.centerXY{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
